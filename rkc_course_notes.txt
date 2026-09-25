@@ -13,3 +13,7 @@ Volumes:
 docker run -it --entrypoint=bash -v $(pwd):/app/test python:3.13-slim
 -- Maps current working directory to /app/test on container  
 
+Python Sys: 
+import sys 
+print sys.argv
+
