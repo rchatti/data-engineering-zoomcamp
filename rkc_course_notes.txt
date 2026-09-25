@@ -1,0 +1,15 @@
+Docker: 
+Image -> Container 
+
+Commands: 
+docker run <>
+docker run ubuntu -- Downloads the Ubuntu Image, but does nothing else 
+docker run -it ubuntu --Downloads Image, opens terminal in Ubuntu 
+docker run python:3.13-slim --Downloads Python Image (Debian OS)
+docker run -it python3:13-slim --Downloads Python Image, opens Python interpreter 
+docker run -it --entrypoint=bash python:3.13-slim --Downloads Python Image, opens Terminal
+
+Volumes: 
+docker run -it --entrypoint=bash -v $(pwd):/app/test python:3.13-slim
+-- Maps current working directory to /app/test on container  
+
